@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-image: url('img/daniel-leone-v7daTKlZzaw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h3{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.container .row .card{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container .row .col{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container .form-group{
+    margin: 20px;
+}
+
+.container .form-group label{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.container .form-group input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .form-group button{
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.container .form-group button:hover{
+    background-color: #14171b;
+}
+
+
+.msg-success,.msg-error {
+    padding: 10px;
+    margin-bottom: 16px;
+    background: #d9d2d2;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.msg-error {
+    background: #ff7979;
+}
+.msg-success {
+    background: #448f5b;
+}
+
+.error-msg {
+    padding: 12px;
+    color: #cb5454;
+} 
