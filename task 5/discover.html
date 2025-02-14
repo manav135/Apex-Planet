@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <title>AdvenTour</title>
+</head>
+
+<body>
+    <section id="hero">
+        <div id="back"></div>
+        <div class="section-wrap">
+            <header>
+                <a class="head-logo"><span>Adven</span>Tour</a>
+                <nav>
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item active">Discover</a>
+                    <a class="nav-item">Service</a>
+                    <a class="nav-item">Blog</a>
+                    <a class="nav-item">About</a>
+                    <a class="nav-item">Contact</a>
+                    <a class="nav-item" href="signup.php">Login</a>
+                    <a class="nav-item" href="signup.php">Signup</a>
+                </nav>
+            </header>
+
+            <div class="hr-content">
+                <div class="ct-left">
+                    <h1 class="headline"><span>Travel Packages </span>Adventure</h1>
+                    <p class="hr-description">
+                        Don't wait for tomorrow—start your adventure today! Discover breathtaking destinations, thrilling
+                        experiences, and unforgettable memories around the world. ❞
+                        <br />
+                        You have booked your flights and hotels, now the next thing you seek to do is scour through tour 
+                        packages and book one. If it is domestically you plan to travel, you will find innumerable 
+                        holiday packages, but very few that match your requirement, or for that matter your interests 
+                        and personality. Enter Yatra and you can now choose from an array of holiday packages in 
+                        India that span across the length and breadth of the country, taking you into breathtaking 
+                        tea estates, hill resorts to splendid backwater retreats. By booking your India tour with Yatra, 
+                        you get to customise your holiday to suit your requirement, and more importantly can avail some 
+                        attractive discounts and offers from time to time.
+                        Here are the top reasons you should book your tour packages in all countries
+                    </p>
+                </div>     
+                <div class="ct-right">
+                    <img src="im/pasg.jpg" alt="pasg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="destination">
+        <div class="section-wrap">
+            <div class="section-head">
+                <h2 class="section-title">most Popular <br /><span>Destinations</span></h2>
+                <div class="ds-control">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="ds-content">
+                <div class="ds-card crd-1">
+                    <img src="im/d1.jpg" alt="d1">
+                    <h3 class="ds-crd-title">Tropical Beach Paradise</h3>
+                    <div>
+                        <p class="price">$250/Person</p>
+                        <button class="crd-btn" id="book" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </p>
+                </div>
+
+                <div class="ds-card crd-2">
+                    <img src="im/d2.jpg" alt="d2">
+                    <h3 class="ds-crd-title">Mountain Escape</h3>
+                    <div>
+                        <p class="price">$400/Person</p>
+                        <button class="crd-btn" id="book1" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.6
+                    </p>
+                </div>
+
+                <div class="ds-card crd-3">
+                    <img src="im/d3.jpg" alt="d3">
+                    <h3 class="ds-crd-title">Rainforest Retreat</h3>
+                    <div>
+                        <p class="price">$150/Person</p>
+                        <button class="crd-btn" id="book2" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </p>
+                </div>
+            </div>
+            <button class="ds-btn" id="seeall">See all</button>
+        </div>
+    </section>
+
+    <section id="destination">
+        <div class="section-wrap">
+            <div class="section-head">
+                <h2 class="section-title">most Popular <br /><span>Packages</span></h2>
+                <div class="ds-control">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="ds-content">
+                <div class="ds-card crd-1">
+                    <img src="im/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg" alt="d1">Goa</h3>
+                    <div>
+                        <p class="price">$100/Person</p>
+                        <button class="crd-btn" id="book3" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </p>
+                </div>
+
+                <div class="ds-card crd-2">
+                    <img src="im/nature-photographer-29ezCWtMtnM-unsplash.jpg" alt="d2">
+                    <h3 class="ds-crd-title">Kerala</h3>
+                    <div>
+                        <p class="price">$160/Person</p>
+                        <button class="crd-btn" id="book4" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.6
+                    </p>
+                </div>
+
+                <div class="ds-card crd-3">
+                    <img src="im/pexels-pixabay-158398.jpg" alt="d3">
+                    <h3 class="ds-crd-title">Canada</h3>
+                    <div>
+                        <p class="price">$150/Person</p>
+                        <button class="crd-btn" id="book5" onclick="Book()">Book</button>
+                    </div>
+                    <p class="ds-rate">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </p>
+                </div>
+            </div>
+            <button class="ds-btn" id="seeall" >See all</button>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="section-wrap">
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p class="copyrights">@ManavPatel 2025</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

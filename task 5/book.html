@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("im/b.jpg");
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: transparent;
+            background-color: rgba(255, 255, 255, 0.2);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            display: block;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #000000;
+        }
+        .form-group button:hover {
+            background-color: #525752;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Advance Booking</h2>
+        <form action="book.php" method="post">
+            <div class="form-group">
+                <label for="name">FullName:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="triptype">Trip Type</label>
+                <select id="triptype" name="triptype" required>
+                    <option value="" disabled selected>Select a trip types</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="beach">Beach</option>
+                    <option value="honeymoon">Honeymoon</option>
+                    <option value="family">Family</option>
+                    <option value="solo">Solo</option>
+                    <option value="single">Single Trip</option>
+                    <option value="round">Round Trips</option>
+                    <option value="multi">Multi-city</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="budget">Budget</option>
+                    <option value="group">Group</option>
+                    <option value="packages">Packages</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="from">Form:</label>
+                <input type="text" id="from" name="from" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select a Destination:</option>
+                    <option value="bali">Bali, Indonesia</option>
+                    <option value="paris">Paris, France</option>
+                    <option value="newyork">New York, USA</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="sydney">Sydney, Australia</option>
+                    <option value="goa">Goa, India</option>
+                    <option value="dubai">Dubai, UAE</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="newzealand">New Zealand</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="norway">Norway</option>
+                    <option value="finland">Finland</option>
+                    <option value="iceland">Iceland</option>
+                    <option value="australIa">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="peru">Peru</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="uruguay">Uruguay</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">ReturnDate:</label>
+                <input type="date" id="returndate" name="returndate" required>
+            </div>
+            <div class="form-group">
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" required>
+            </div>
+            <div class="form-group">
+                <label for="preferences">Preferences:</label>
+                <textarea id="preferences" name="preferences" rows="4" placeholder="E.g., vegetarian meals, window seat, etc."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="adults">Adult(s)</label>
+                <input type="number" id="adults" name="adults" required>
+            </div>
+            <div class="form-group">
+                <label for="children">Children</label>
+                <input type="number" id="children" name="children" required>
+            </div>
+            <div class="form-group">
+                <label for="Choose your gender:">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select a gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Choose your age:">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="Choose your nationality:">Nationality</label>
+                <input type="text" id="nationality" name="nationality" required>
+            </div>
+            <div class="form-group">
+                <button value="submit" name="submit" onclick="location.href='payment.html'">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
